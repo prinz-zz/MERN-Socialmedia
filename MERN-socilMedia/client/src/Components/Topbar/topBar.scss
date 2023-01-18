@@ -1,0 +1,89 @@
+.topbarContainer {
+        height: 70px;
+        background-color: #1877f2;
+        display: flex;
+        align-items: center;
+        position: sticky;
+        top: 0;
+        z-index: 999;
+
+    .topLeft {
+        flex: 3;
+
+        .Logo {
+            font-size: 24px;
+            color: #fff;
+            cursor: pointer;
+            font-weight: bold;
+            margin-left: 20px;
+        }
+    }
+    .topCenter{
+        flex: 5;
+
+        .searchBar {
+            width: 100%;
+            background:#fff;
+            border-radius:10px;
+            display: flex;
+            align-items: center;
+            padding: 5px;
+            
+
+            input {
+                outline: none;
+                border-color: transparent;
+            }
+        }
+    }
+    .topRight{
+        flex: 4;
+        display: flex;
+        align-items: center;
+        justify-content: space-around;  
+        color: #fff;  
+
+        .topRightLinks {
+            font-size: 14px;
+            a {
+                color: #fff;
+            }
+            span {
+                margin-right: 10px;
+                cursor: pointer;
+            }
+        }
+        .topRightIcons {
+            display: flex;
+            align-items: center;
+
+            .topRightUser {
+                margin-right: 15px;
+                cursor: pointer;
+                position: relative;
+
+                .counter {
+                    position: absolute;
+                    width: 15px;
+                    height: 15px;
+                    background: red;
+                    border-radius: 50%;
+                    color: #fff;
+                    font-size:12px;
+                    left: 15px;
+                    top: -5px;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                }
+            }
+            .proPic {
+                height: 32px;
+                width: 32px;
+                border-radius:50%;
+                object-fit: cover;
+                cursor: pointer;
+            }
+        }
+    }
+}

@@ -1,0 +1,94 @@
+.rightBarContainer {
+    flex: 3;
+    padding: 20px;
+    position: sticky;
+    top: 70px;
+    height: calc(100vh - 70px);
+    overflow-y: auto;
+    direction:rtl;
+
+    .rightBarWrapper {
+        direction:ltr;
+
+        .birthday {
+            padding: 10px;
+            display: flex;
+            align-items: center;
+
+            svg {
+                color: red;
+                transform: scale(1.5);
+                margin-right: 10px;
+            }
+        }
+
+        .rightBarAd {
+
+            img{
+                width: 100%;
+                border-radius: 10px;
+                margin: 15px 0;
+            }
+        }
+        h4 {
+            margin: 15px 0;
+            padding-bottom: 10px;
+            border-bottom: 1px solid lightgrey;
+        }
+        ul {
+            li {
+                list-style: none;
+                display: flex;
+                align-items: center;
+                margin-bottom: 10px;
+
+                div {
+                    position: relative;
+                    img {
+                        height:50px;
+                        width: 50px;
+                        border-radius:50%;
+                        object-fit: cover;
+                    }
+                    span {
+                        width: 12px;
+                        height: 12px;
+                        background-color: #00FF00;
+                        display: block;
+                        border-radius: 50%;
+                        position: absolute;
+                        top: 0;
+                        left: 30px;
+                        border: 2px solid #fff;
+                    }
+                }
+                span{
+                    font-weight: 500;
+                    margin-left: 10px;
+                }
+            }
+        }
+
+        .profileRightbar {
+            direction:ltr;
+        
+        .rightbarFollowings {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content:space-between;
+
+            div {
+                display: flex;
+                flex-direction:column;
+                align-items:center;
+                margin: 20px;
+                cursor: pointer;
+
+            img {
+                width:50px;
+            }
+        }
+        }
+    }
+    }
+}

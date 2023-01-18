@@ -1,0 +1,46 @@
+.profileContainer {
+    display: flex;
+
+    .profileRight {
+        flex: 9;
+
+        .profileRightTop {
+            font-size: inherit;
+
+            .profileCover {
+                height: 330px;
+                position: relative;
+                
+                .proCover {
+                    width: 100%;
+                    height: 250px;
+                    object-fit: cover;
+                }
+                .proPic {
+                    width: 200px;
+                    height: 200px;
+                    object-fit: cover;
+                    border-radius: 50%;
+                    position: absolute;
+                    left: 0;
+                    right: 0;
+                    top: 120px;
+                    margin: auto;
+                }
+            }
+            .profileInfo {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+                
+                h4 {
+                    font-size: 25px;
+                }
+            }
+        }
+        .profileRightBottom {
+            display: flex;
+        }
+    }
+}
